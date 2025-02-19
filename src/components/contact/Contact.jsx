@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./contact.scss";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
 
 const variants = {
   initial: {
@@ -18,6 +19,27 @@ const variants = {
 };
 
 function Contact() {
+  const formRef = useRef();
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_42p60vw', 'template_zac1iu8', formRef.current, {
+        publicKey: 'X5zpK0tr4jyb8vNiX',
+      })
+      .then(
+        () => {
+          setSuccess(true)
+        },
+        (error) => {
+          setError(true)
+        },
+      );
+  };
+
   return (
     <motion.div
       className="contact"
@@ -73,15 +95,19 @@ function Contact() {
           </svg>
         </motion.div>
         <motion.form
+          ref = {formRef}
+          onSubmit={sendEmail}
           action=""
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 3, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" />
-          <input type="text" required placeholder="Email" />
-          <textarea rows={8} placeholder="Message" />
+          <input type="text" required placeholder="Name" name="name"/>
+          <input type="text" required placeholder="Email" name="email"/>
+          <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
+          {error && "Error"}
+          {success && "Success"}
         </motion.form>
       </div>
     </motion.div>
