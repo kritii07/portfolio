@@ -59,11 +59,11 @@ function Hero() {
       </div>
 
       <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-        Frontend-Developer  Coder
+        &lt;Coder&gt; Frontend-Developer  
       </motion.div>
 
       <div className="imageContainer">
-        <img src="hero.png" alt="" width="580px" />
+        <img src="hero.png" alt="" width="560px" />
       </div>
     </div>
   )

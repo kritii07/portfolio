@@ -20,12 +20,12 @@ function Parallax({ type }) {
       ref={ref}
       style={{
         background:
-          type === "services"
+          type === "about"
             ? "linear-gradient(180deg, #111132, #0c0c1d)"
             : "liner-gradient(180deg, #111132,rgb(80, 80, 104))",
       }}
     >
-      <motion.h1 style={{y: yText}}>{type === "services" ? "What We Do?" : "What We Did?"}</motion.h1>
+      <motion.h1 style={{y: yText}}>{type === "about" ? "About Me" : "Code & Craft"}</motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div style={{y: yBg}} className="planets"></motion.div>
       <motion.div style={{x:yBg}} className="stars"></motion.div>

@@ -53,10 +53,10 @@ function Contact() {
           <h2>Mail</h2>
           <span>kritiantwal.7@gmail.com</span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
+        {/* <motion.div className="item" variants={variants}>
           <h2>LinkedIn</h2>
           <span>kritiantwal.7@gmail.com</span>
-        </motion.div>
+        </motion.div> */}
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
           <span>+91 8816915999</span>
