@@ -15,9 +15,9 @@ function Navbar() {
             transition={{duration:0.5}}
             >Kriti Antwal</motion.span>
             <div className="social">
-                <a href="#"><img src="/facebook.png" alt="" /></a>
-                <a href="#"><img src="/instagram.png" alt="" /></a>
-                <a href="#"><img src="/youtube.png" alt="" /></a>
+                <a href="#"><img src="/linkedin.png" alt="" /></a>
+                <a href="#"><img src="/github.png" alt="" /></a>
+                <a href="#"><img src="/gmail.png" alt="" /></a>
             </div>
         </div>
     </div>
