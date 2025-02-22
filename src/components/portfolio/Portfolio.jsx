@@ -2,22 +2,23 @@ import React, { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
+
 const items = [
   {
     id: 1,
     title: "SplitEasy",
-    img: "https://images.pexels.com/photos/30435654/pexels-photo-30435654/free-photo-of-serene-forest-landscape-with-tall-pine-trees.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    img: "MacBook.svg",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium accusantium totam velit officia. Harum possimus totam porro eaque quasi omnis praesentium aut facilis eligendi. Impedit distinctio vitae qui et quam.",
   },
   {
     id: 2,
     title: "RoamReady",
-    img: "https://images.pexels.com/photos/30435654/pexels-photo-30435654/free-photo-of-serene-forest-landscape-with-tall-pine-trees.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    img: "MacBookair.svg",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium accusantium totam velit officia. Harum possimus totam porro eaque quasi omnis praesentium aut facilis eligendi. Impedit distinctio vitae qui et quam.",
   },
   {
     id: 3,
-    title: "Currency Convertor",
+    title: "CurrencyXchange",
     img: "https://images.pexels.com/photos/30435654/pexels-photo-30435654/free-photo-of-serene-forest-landscape-with-tall-pine-trees.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium accusantium totam velit officia. Harum possimus totam porro eaque quasi omnis praesentium aut facilis eligendi. Impedit distinctio vitae qui et quam.",
   },

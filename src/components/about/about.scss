@@ -1,3 +1,76 @@
-.about{
-    
+.about {
+  .headingContainer {
+    width: 62%;
+    margin: auto;
+    text-align: center; 
+    padding: 60px 70px 40px;
+
+    .heading {
+      color: orange;
+      font-size: large;
+      font-weight: 600;
+    }
+    .small-line {
+      width: 50px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: white;
+      margin: 20px auto 0;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 60px;
+    padding: 30px 100px;
+
+    .intro {
+      width: 50%;
+
+      h2{
+        margin-bottom: 25px;
+        font-size: 38px;
+      }
+
+      p{
+        font-size: 18px;
+        color: gray;
+        margin-bottom: 25px;
+        padding: 0px 5px;
+      }
+
+      button{
+        background-color: orange; 
+        margin: 10px;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+
+      }
+    }
+
+    .skills {
+        width: 50%;
+      
+      
+      h2 {
+        margin-bottom: 25px;
+        font-size: 38px;
+      }
+      
+      span {
+        display: inline-block;  
+        background-color: gray;
+        color: white; 
+        margin: 10px;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }  
+      
+  }
 }
