@@ -27,7 +27,7 @@ const skillsVariants = {
 };
 
 const skillsList = [
-  "HTML", "CSS", "JavaScript", "React", "Next.js", 
+  "HTML", "CSS", "JavaScript", "React", "Redux", "Tailwind CSS", "Next.js", "SQL", 
   "Git", "Github", "Responsive Design"
 ];
 
