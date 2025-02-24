@@ -30,10 +30,9 @@ function Links() {
 
   const items = [
     "Homepage",
-    "Services",
+    "About Me",
     "Portfolio",
-    "Contact",
-    "About"
+    "Contact"
   ]
 
   return (
