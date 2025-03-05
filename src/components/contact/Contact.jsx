@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./contact.scss";
 import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
@@ -39,6 +39,18 @@ function Contact() {
         },
       );
   };
+
+   const [isMobile, setIsMobile] = useState(false);
+  
+    useEffect(() => {
+      const checkScreenSize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+  
+      checkScreenSize();
+      window.addEventListener("resize", checkScreenSize);
+      return () => window.removeEventListener("resize", checkScreenSize);
+    }, []);
 
   return (
     <motion.div
@@ -100,7 +112,7 @@ function Contact() {
           action=""
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 3, duration: 1 }}
+          transition={{ delay: isMobile ? 1 : 3, duration: 1 }}
         >
           <input type="text" required placeholder="Name" name="name"/>
           <input type="text" required placeholder="Email" name="email"/>
