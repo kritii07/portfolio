@@ -49,7 +49,11 @@
 
       @include mobile {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding: 0 10px;
       }
 
       h2 {
@@ -102,7 +106,9 @@
 
       @include mobile {
         width: 100%;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     
       h2 {
@@ -119,23 +125,38 @@
         display: inline-block;  
         background-color: gray;
         color: white; 
-        margin: 10px;
-        padding: 12px 20px;
+        margin: 5px;
+        padding: 12px 15px;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         transition: transform 0.3s ease;
 
         @include mobile {
           font-size: 12px;
           margin: 5px;
-          padding: 8px 16px;
-          display: inline-flex;
+          padding: 8px 12px;
+          display: flex;
           flex-wrap: wrap;
+          justify-content: center;
         }
 
         &:hover {
           transform: scale(1.1);
+        }
+      }
+
+      // Fix for skills going out of frame
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 90%;
+
+        @include mobile {
+          width: 100%;
+          max-width: 100%;
+          padding: 0 10px;
         }
       }
     }  
