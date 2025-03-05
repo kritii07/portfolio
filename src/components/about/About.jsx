@@ -50,7 +50,7 @@ function About() {
       <div className="headingContainer">
         <p className="heading">
           {isMobile
-      ? "Here you will find more information about me"
+      ? "Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology"
       : "Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology"}
         </p>
         <div className="small-line"></div>

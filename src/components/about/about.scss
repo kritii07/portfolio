@@ -1,6 +1,9 @@
 @import "../../app.scss";
 
 .about {
+    display: grid;
+    height: 100vh;
+
   .headingContainer {
     width: 62%;
     margin: auto;
@@ -100,10 +103,11 @@
 
     .skills {
         width: 50%;
-        text-align: center;
+        
 
         @include mobile{
           width: 100%;
+          text-align: center;
 
         }
       
