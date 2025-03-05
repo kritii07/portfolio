@@ -42,7 +42,7 @@
 
       @include mobile{
         flex-direction: column;
-        padding-top: 150px;
+        padding-top: 130px;
       }
 
       .imageContainer {
@@ -79,6 +79,7 @@
           align-items: center;
           text-align: center;
           padding-top: 0;
+          gap:20px;
         }
 
         h2{
